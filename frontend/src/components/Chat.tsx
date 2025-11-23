@@ -6,7 +6,8 @@ import FileUploadEnhanced from './FileUploadEnhanced';
 import FilePreviewModal from './FilePreviewModal';
 import './Chat.css';
 
-const API_URL = 'http://localhost:3000/api';
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:3000/api';
+const SOCKET_URL = process.env.REACT_APP_API_URL?.replace('/api', '') || 'http://localhost:3000';
 
 interface Message {
   id: string;
@@ -167,7 +168,7 @@ const Chat: React.FC<ChatProps> = ({ user, onAppointmentBooked, rescheduleAppoin
 
   useEffect(() => {
     // Connect to WebSocket
-    const newSocket = io('http://localhost:3000', {
+    const newSocket = io(SOCKET_URL, {
       auth: {
         token: user.token,
       },
