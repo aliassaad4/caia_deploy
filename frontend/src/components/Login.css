@@ -1,0 +1,160 @@
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.login-box {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+
+.login-box h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+.login-box h2 {
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.role-toggle {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.role-toggle button {
+  flex: 1;
+  padding: 10px;
+  background: #f0f0f0;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.role-toggle button.active {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+.role-toggle button:hover {
+  border-color: #667eea;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.error-message {
+  background: #fee;
+  color: #c33;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #5568d3;
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.toggle-form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.toggle-form p {
+  color: #666;
+  font-size: 14px;
+}
+
+.toggle-form button {
+  background: none;
+  border: none;
+  color: #667eea;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.toggle-form button:hover {
+  color: #5568d3;
+}
+
+.doctor-info {
+  text-align: center;
+  margin-top: 20px;
+  padding: 15px;
+  background: #e0e7ff;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+.doctor-info .info-text {
+  color: #4338ca;
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.doctor-info strong {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 15px;
+}

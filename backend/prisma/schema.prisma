@@ -1,0 +1,520 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Patient {
+  id                          String             @id @default(uuid())
+  email                       String             @unique
+  passwordHash                String
+  firstName                   String
+  lastName                    String
+  dateOfBirth                 DateTime?
+  gender                      String?
+  phone                       String?
+  address                     String?
+  city                        String?
+  country                     String?
+  timezone                    String             @default("UTC")
+  preferredLanguage           String             @default("en")
+  emergencyContact            String?
+  emergencyPhone              String?
+  createdAt                   DateTime           @default(now())
+  updatedAt                   DateTime           @updatedAt
+  deletedAt                   DateTime?
+  initialConsultationDate     DateTime?
+  initialConsultationNotes    String?
+  initialConsultationReason   String?
+  nextMeetingReason           String?
+  nextMeetingRecommendedAfter String?
+  nextMeetingRecommendedBy    String?
+  nextMeetingScheduled        DateTime?
+  clinicalProfile             ClinicalProfile?
+  fileNotifications           FileNotification[]
+  messages                    Message[]
+  patientChart                PatientChart?
+  files                       PatientFile[]
+  portalSessions              PortalSession[]
+  tasks                       Task[]
+  visits                      Visit[]
+
+  @@map("patients")
+}
+
+model ClinicalProfile {
+  id                   String    @id @default(uuid())
+  patientId            String    @unique
+  bloodType            String?
+  allergies            String[]  @default([])
+  chronicConditions    String[]  @default([])
+  currentMedications   String[]  @default([])
+  pastSurgeries        String[]  @default([])
+  familyHistory        String?
+  activeProblems       String[]  @default([])
+  nextVisitWindow      DateTime?
+  lastVisitSummary     String?
+  createdAt            DateTime  @default(now())
+  updatedAt            DateTime  @updatedAt
+  alcoholUse           String?
+  exerciseHabits       String?
+  occupation           String?
+  pastHospitalizations String[]  @default([])
+  smokingStatus        String?
+  vaccinationHistory   String[]  @default([])
+  patient              Patient   @relation(fields: [patientId], references: [id], onDelete: Cascade)
+
+  @@map("clinical_profiles")
+}
+
+model PatientChart {
+  id                       String    @id @default(uuid())
+  patientId                String    @unique
+  primaryComplaint         String?
+  presentingSymptoms       String?
+  medicalHistorySummary    String?
+  currentDiagnoses         Json?
+  activeProblems           String[]  @default([])
+  currentTreatmentPlan     String?
+  medicationsDetails       Json?
+  labResults               Json?
+  imagingResults           Json?
+  otherTestResults         Json?
+  progressNotes            String?
+  treatmentResponse        String?
+  complications            String[]  @default([])
+  riskFactors              String[]  @default([])
+  differentialDiagnoses    String[]  @default([])
+  followUpPlan             String?
+  upcomingInvestigations   String[]  @default([])
+  referrals                Json?
+  consultationNotes        String?
+  lifestyleFactors         String?
+  socialConcerns           String?
+  patientEducation         String?
+  homeInstructions         String?
+  lastUpdatedByVisit       String?
+  lastReviewedAt           DateTime?
+  chartCompleteness        Int       @default(0)
+  createdAt                DateTime  @default(now())
+  updatedAt                DateTime  @updatedAt
+  comprehensivePatientFile String?
+  fileLastUpdatedFrom      String?
+  testResults              Json?
+  patient                  Patient   @relation(fields: [patientId], references: [id], onDelete: Cascade)
+
+  @@map("patient_charts")
+}
+
+model PortalSession {
+  id           String    @id @default(uuid())
+  patientId    String
+  token        String    @unique
+  ipAddress    String?
+  userAgent    String?
+  expiresAt    DateTime
+  lastActiveAt DateTime  @default(now())
+  createdAt    DateTime  @default(now())
+  revokedAt    DateTime?
+  patient      Patient   @relation(fields: [patientId], references: [id], onDelete: Cascade)
+
+  @@index([patientId])
+  @@index([token])
+  @@map("portal_sessions")
+}
+
+model Visit {
+  id                  String      @id @default(uuid())
+  patientId           String
+  scheduledAt         DateTime
+  completedAt         DateTime?
+  cancelledAt         DateTime?
+  status              VisitStatus @default(SCHEDULED)
+  visitType           String
+  reasonForVisit      String
+  durationMinutes     Int         @default(15)
+  priorityScore       Int         @default(5)
+  chiefComplaint      String?
+  hpiDraft            String?
+  examFindings        String?
+  assessment          String?
+  plan                String?
+  audioFileUrl        String?
+  transcriptData      Json?
+  noteApproved        Boolean     @default(false)
+  approvedAt          DateTime?
+  approvedBy          String?
+  patientSummary      String?
+  patientInstructions String?
+  createdAt           DateTime    @default(now())
+  updatedAt           DateTime    @updatedAt
+  providerId          String?
+  processingError     String?
+  processingStatus    String?
+  calendarEventId     String?
+  patient             Patient     @relation(fields: [patientId], references: [id], onDelete: Cascade)
+  provider            Provider?   @relation(fields: [providerId], references: [id])
+
+  @@index([patientId])
+  @@index([providerId])
+  @@index([status])
+  @@index([scheduledAt])
+  @@map("visits")
+}
+
+model Message {
+  id             String        @id @default(uuid())
+  patientId      String
+  content        String
+  messageType    MessageType   @default(TEXT)
+  sender         MessageSender
+  visitId        String?
+  conversationId String?
+  metadata       Json?
+  aiProcessed    Boolean       @default(false)
+  aiResponse     String?
+  createdAt      DateTime      @default(now())
+  readAt         DateTime?
+  patient        Patient       @relation(fields: [patientId], references: [id], onDelete: Cascade)
+  attachedFiles  PatientFile[]
+
+  @@index([patientId])
+  @@index([conversationId])
+  @@index([createdAt])
+  @@map("messages")
+}
+
+model Task {
+  id               String       @id @default(uuid())
+  patientId        String
+  taskType         TaskType
+  title            String
+  description      String?
+  priority         TaskPriority @default(MEDIUM)
+  status           TaskStatus   @default(PENDING)
+  visitId          String?
+  dueDate          DateTime?
+  completedAt      DateTime?
+  orderDetails     Json?
+  resultUrl        String?
+  resultSummary    String?
+  requiresApproval Boolean      @default(true)
+  approvedBy       String?
+  approvedAt       DateTime?
+  createdAt        DateTime     @default(now())
+  updatedAt        DateTime     @updatedAt
+  patient          Patient      @relation(fields: [patientId], references: [id], onDelete: Cascade)
+
+  @@index([patientId])
+  @@index([status])
+  @@index([taskType])
+  @@map("tasks")
+}
+
+model QBoard {
+  id          String       @id @default(uuid())
+  patientId   String
+  question    String
+  context     String?
+  category    String?
+  urgency     Int          @default(5)
+  status      QBoardStatus @default(PENDING)
+  response    String?
+  respondedBy String?
+  respondedAt DateTime?
+  visitId     String?
+  messageId   String?
+  createdAt   DateTime     @default(now())
+  resolvedAt  DateTime?
+
+  @@index([status])
+  @@index([urgency])
+  @@index([createdAt])
+  @@map("q_board")
+}
+
+model ApprovalQueue {
+  id              String         @id @default(uuid())
+  contentType     ApprovalType
+  contentId       String
+  patientId       String
+  draftContent    Json
+  aiGenerated     Boolean        @default(true)
+  confidenceScore Float?
+  suggestedEdits  String[]       @default([])
+  status          ApprovalStatus @default(PENDING)
+  reviewedBy      String?
+  reviewedAt      DateTime?
+  editHistory     Json?
+  createdAt       DateTime       @default(now())
+
+  @@index([status])
+  @@index([contentType])
+  @@index([patientId])
+  @@map("approval_queue")
+}
+
+model AuditLog {
+  id           String   @id @default(uuid())
+  actorType    String
+  actorId      String?
+  action       String
+  resourceType String
+  resourceId   String
+  changes      Json?
+  metadata     Json?
+  ipAddress    String?
+  userAgent    String?
+  rationale    String?
+  createdAt    DateTime @default(now())
+
+  @@index([actorId])
+  @@index([resourceType, resourceId])
+  @@index([createdAt])
+  @@map("audit_logs")
+}
+
+model PatientFile {
+  id                String             @id @default(uuid())
+  patientId         String
+  fileName          String
+  fileType          String
+  fileSize          Int
+  fileCategory      FileCategory
+  storageUrl        String
+  storageKey        String
+  description       String?
+  uploadedBy        String
+  visitId           String?
+  messageId         String?
+  encrypted         Boolean            @default(false)
+  accessLog         Json?
+  createdAt         DateTime           @default(now())
+  deletedAt         DateTime?
+  parentFileId      String?
+  updatedAt         DateTime           @default(now()) @updatedAt
+  versionNumber     Int                @default(1)
+  accessCount       Int                @default(0)
+  aiConfidenceScore Float?
+  aiExtractedData   Json?
+  aiProcessedAt     DateTime?
+  aiSummary         String?
+  reviewStatus      String             @default("PENDING")
+  reviewedAt        DateTime?
+  reviewedBy        String?
+  uploadedByRole    String             @default("patient")
+  annotations       FileAnnotation[]
+  comments          FileComment[]
+  notifications     FileNotification[]
+  message           Message?           @relation(fields: [messageId], references: [id])
+  parentFile        PatientFile?       @relation("FileVersions", fields: [parentFileId], references: [id])
+  versions          PatientFile[]      @relation("FileVersions")
+  patient           Patient            @relation(fields: [patientId], references: [id], onDelete: Cascade)
+
+  @@index([patientId])
+  @@index([parentFileId])
+  @@index([fileCategory])
+  @@index([createdAt])
+  @@index([reviewStatus])
+  @@map("patient_files")
+}
+
+model FileAnnotation {
+  id             String      @id @default(uuid())
+  fileId         String
+  doctorId       String
+  annotationType String
+  content        String
+  pageNumber     Int?
+  coordinates    Json?
+  createdAt      DateTime    @default(now())
+  updatedAt      DateTime    @updatedAt
+  doctor         Provider    @relation("FileAnnotations", fields: [doctorId], references: [id], onDelete: Cascade)
+  file           PatientFile @relation(fields: [fileId], references: [id], onDelete: Cascade)
+
+  @@index([fileId])
+  @@index([doctorId])
+  @@map("file_annotations")
+}
+
+model FileComment {
+  id        String      @id @default(uuid())
+  fileId    String
+  doctorId  String
+  content   String
+  createdAt DateTime    @default(now())
+  updatedAt DateTime    @updatedAt
+  deletedAt DateTime?
+  doctor    Provider    @relation("FileComments", fields: [doctorId], references: [id], onDelete: Cascade)
+  file      PatientFile @relation(fields: [fileId], references: [id], onDelete: Cascade)
+
+  @@index([fileId])
+  @@index([doctorId])
+  @@map("file_comments")
+}
+
+model FileNotification {
+  id        String      @id @default(uuid())
+  fileId    String
+  doctorId  String
+  patientId String
+  status    String      @default("PENDING")
+  readAt    DateTime?
+  createdAt DateTime    @default(now())
+  updatedAt DateTime    @updatedAt
+  doctor    Provider    @relation("FileNotifications", fields: [doctorId], references: [id], onDelete: Cascade)
+  file      PatientFile @relation(fields: [fileId], references: [id], onDelete: Cascade)
+  patient   Patient     @relation(fields: [patientId], references: [id], onDelete: Cascade)
+
+  @@index([doctorId, status])
+  @@index([patientId])
+  @@index([fileId])
+  @@map("file_notifications")
+}
+
+model Provider {
+  id                   String             @id @default(uuid())
+  email                String             @unique
+  passwordHash         String
+  firstName            String
+  lastName             String
+  specialty            String?
+  licenseNumber        String?
+  calendarProvider     String?
+  workingHours         Json?
+  timezone             String             @default("UTC")
+  bufferBefore         Int                @default(5)
+  bufferAfter          Int                @default(5)
+  durationRules        Json?
+  createdAt            DateTime           @default(now())
+  updatedAt            DateTime           @updatedAt
+  aiInstructions       String?
+  clinicAddress        String?
+  clinicCity           String?
+  clinicCountry        String?
+  clinicName           String?
+  clinicPhone          String?
+  preVisitNotes        String?
+  profileDescription   String?
+  calendarAccessToken  String?
+  calendarConnected    Boolean            @default(false)
+  calendarEmail        String?
+  calendarLastSyncAt   DateTime?
+  calendarRefreshToken String?
+  calendarTokenExpiry  DateTime?
+  locationDetails      String?
+  appointmentTypes     AppointmentType[]
+  fileAnnotations      FileAnnotation[]   @relation("FileAnnotations")
+  fileComments         FileComment[]      @relation("FileComments")
+  fileNotifications    FileNotification[] @relation("FileNotifications")
+  visits               Visit[]
+
+  @@map("providers")
+}
+
+model AppointmentType {
+  id                   String   @id @default(uuid())
+  providerId           String
+  name                 String
+  description          String?
+  code                 String
+  durationMinutes      Int
+  preVisitInstructions String?
+  isActive             Boolean  @default(true)
+  displayOrder         Int      @default(0)
+  createdAt            DateTime @default(now())
+  updatedAt            DateTime @updatedAt
+  provider             Provider @relation(fields: [providerId], references: [id], onDelete: Cascade)
+
+  @@unique([providerId, code])
+  @@index([providerId])
+  @@map("appointment_types")
+}
+
+enum VisitStatus {
+  SCHEDULED
+  CHECKED_IN
+  IN_PROGRESS
+  COMPLETED
+  CANCELLED
+  NO_SHOW
+}
+
+enum MessageType {
+  TEXT
+  AUDIO
+  IMAGE
+  DOCUMENT
+  SYSTEM
+}
+
+enum MessageSender {
+  PATIENT
+  AI_ASSISTANT
+  DOCTOR
+  SYSTEM
+}
+
+enum TaskType {
+  LAB_ORDER
+  IMAGING_ORDER
+  PRESCRIPTION
+  FOLLOW_UP
+  MEDICATION_ADHERENCE
+  PREP_INSTRUCTION
+  ADMINISTRATIVE
+  FILE_REVIEW
+}
+
+enum TaskPriority {
+  LOW
+  MEDIUM
+  HIGH
+  URGENT
+}
+
+enum TaskStatus {
+  PENDING
+  IN_PROGRESS
+  COMPLETED
+  CANCELLED
+  OVERDUE
+}
+
+enum QBoardStatus {
+  PENDING
+  IN_REVIEW
+  RESPONDED
+  ESCALATED
+}
+
+enum ApprovalType {
+  CLINICAL_NOTE
+  PATIENT_SUMMARY
+  ORDER_SET
+  PATIENT_MESSAGE
+  INSTRUCTIONS
+  PATIENT_PROFILE_UPDATE
+}
+
+enum ApprovalStatus {
+  PENDING
+  IN_REVIEW
+  APPROVED
+  REJECTED
+  NEEDS_REVISION
+}
+
+enum FileCategory {
+  LAB_RESULT
+  IMAGING
+  PRESCRIPTION
+  INSURANCE
+  ID_DOCUMENT
+  CONSENT_FORM
+  AUDIO_RECORDING
+  OTHER
+}

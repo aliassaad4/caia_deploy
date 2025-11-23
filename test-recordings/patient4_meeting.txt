@@ -1,0 +1,199 @@
+Doctor: Good afternoon! Come on in. I'm Dr. Michael Thompson. You must be Layla Nasser?
+
+Patient: Yes, hello doctor. Nice to meet you.
+
+Doctor: Likewise. I see this is your first visit here. Before we get into why you're here, I need to collect some medical history. Can you confirm your full name and date of birth?
+
+Patient: Layla Amira Nasser, born April 3rd, 1985.
+
+Doctor: Thank you. Do you know your blood type?
+
+Patient: I'm AB positive.
+
+Doctor: Great. Have you had any surgeries in the past?
+
+Patient: Yes, I've had two C-sections. One in 2015 and another in 2017. Those are my two kids. Other than that, I had my gallbladder removed in 2019. I was having terrible attacks from gallstones.
+
+Doctor: Any other hospitalizations besides those?
+
+Patient: No, just those three times.
+
+Doctor: Are you currently taking any medications?
+
+Patient: I'm on levothyroxine 75 micrograms every morning for hypothyroidism. I was diagnosed about five years ago. I also take a daily prenatal vitamin even though I'm not pregnant anymore, just because it's good for me. And I'm on the Mirena IUD for birth control.
+
+Doctor: Any over-the-counter medications you take regularly?
+
+Patient: I take calcium and vitamin D supplements because my doctor said I should for bone health. Sometimes I take ibuprofen for menstrual cramps or headaches, but not all the time.
+
+Doctor: Do you have any allergies to medications or anything else?
+
+Patient: I'm allergic to latex. I get contact dermatitis from it. And I'm allergic to tree nuts - almonds, cashews, walnuts. If I eat them, my throat swells and I have trouble breathing. I carry an EpiPen with me at all times.
+
+Doctor: That's very important. Good that you have the EpiPen. Besides the hypothyroidism, do you have any other chronic health conditions?
+
+Patient: I have irritable bowel syndrome. I've had it for years. It flares up when I'm stressed. Oh, and I have polycystic ovary syndrome, PCOS. That was diagnosed when I was in my early twenties.
+
+Doctor: How is your PCOS managed?
+
+Patient: The IUD helps regulate my periods, which used to be really irregular. I also watch my diet and try to exercise to manage my weight, which has always been a struggle with PCOS.
+
+Doctor: What about family medical history? Any significant conditions in your family?
+
+Patient: My mother has type 2 diabetes and high blood pressure. She's also had a stroke, but she recovered pretty well. My father has coronary artery disease and he's had bypass surgery. Both my parents are in their 60s. My younger sister has PCOS too, like me. My older brother is pretty healthy, no major issues. Oh, and my maternal aunt has breast cancer, she's currently undergoing treatment.
+
+Doctor: There's quite a bit of history there, especially with heart disease and diabetes. Let me ask about lifestyle. Do you smoke?
+
+Patient: No, I've never smoked.
+
+Doctor: Good. How about alcohol?
+
+Patient: Very rarely. Maybe a glass of wine on special occasions, like holidays or birthdays. I'm just not much of a drinker.
+
+Doctor: Do you exercise regularly?
+
+Patient: I try. I do Zumba classes twice a week and I try to walk every day, but with two kids, a full-time job, it's hard to find time. I probably get maybe three or four days a week of exercise.
+
+Doctor: That's better than nothing. What do you do for work?
+
+Patient: I'm a high school English teacher. So I'm on my feet a lot, which I guess is some activity.
+
+Doctor: Teaching is definitely demanding work. Now, what brings you in today? What's been going on?
+
+Patient: I've been having really heavy periods for the past six months, and they're getting worse. I'm bleeding through super tampons in an hour or two, and I'm having to wear a pad as well. It's affecting my ability to work - I can't leave my classroom easily during class. And I'm exhausted all the time. I'm just so tired.
+
+Doctor: That does sound heavy. How long do your periods typically last?
+
+Patient: They used to last about five days, but now they're going seven to nine days. And the bleeding is heavy the entire time, not just the first couple days.
+
+Doctor: Are you experiencing any pain or cramping?
+
+Patient: Yes, terrible cramping. I have to take ibuprofen around the clock during my period just to function. The cramps are so bad they wake me up at night. And I have this constant dull ache in my lower abdomen.
+
+Doctor: Is the pain just during your period or all the time?
+
+Patient: Mostly during my period, but honestly, I've been having some pelvic discomfort even between periods lately. It's like a heaviness or pressure in my pelvis.
+
+Doctor: Any bleeding between periods?
+
+Patient: A little bit of spotting sometimes, especially after sex. That's new for me.
+
+Doctor: Are you sexually active?
+
+Patient: Yes, with my husband. We've been together for 10 years, married for 8.
+
+Doctor: Any pain during intercourse?
+
+Patient: Actually, yes. That's also new in the past few months. It's uncomfortable, especially with deep penetration. I've been avoiding sex because of it, which is affecting my relationship with my husband.
+
+Doctor: I understand. That must be difficult. Any unusual discharge?
+
+Patient: No, nothing unusual. Just the heavy bleeding during my periods.
+
+Doctor: You mentioned being exhausted. Tell me more about that.
+
+Patient: I'm just so tired all the time. I wake up tired even after a full night's sleep. At work, I can barely make it through the day. I used to be able to handle everything - teaching, taking care of the kids, keeping up with the house - but now I just don't have the energy. I feel weak and dizzy sometimes, especially when I stand up quickly.
+
+Doctor: Any shortness of breath?
+
+Patient: Yes, I get winded easily now. Climbing the stairs at school leaves me breathless. I figured I was just out of shape, but it's gotten worse.
+
+Doctor: Any heart palpitations or irregular heartbeats?
+
+Patient: Yes, actually. My heart races sometimes for no reason. I'll just be sitting at my desk and suddenly my heart is pounding.
+
+Doctor: Any unusual cravings? Like craving ice?
+
+Patient: How did you know? Yes! I've been craving ice constantly. I chew on ice all day long. I thought it was just a weird habit.
+
+Doctor: That's actually a sign of iron deficiency. Let me examine you now. Lie back on the table. I'm going to feel your abdomen. Does this hurt? How about here? I'm feeling some tenderness in your lower abdomen. I can also feel that your uterus seems enlarged.
+
+Doctor: Let me check your eyelids. Your conjunctiva is quite pale, which is another sign of anemia. And your nail beds are pale as well. Let me check your vital signs. Your blood pressure is 105 over 68, which is on the lower side. Your heart rate is 98, which is elevated.
+
+Patient: What does all of that mean?
+
+Doctor: Based on your symptoms - the heavy prolonged menstrual bleeding, fatigue, weakness, dizziness, shortness of breath, palpitations, pale appearance, and ice cravings - I'm quite certain you have iron deficiency anemia from blood loss. The heavy bleeding has depleted your iron stores and you're not making enough red blood cells.
+
+Patient: Is that dangerous?
+
+Doctor: It can be if left untreated. Severe anemia puts strain on your heart and can affect all your organs. But it's treatable. The bigger question is why you're having such heavy bleeding. Given your symptoms of heavy bleeding, pelvic pain, pain with intercourse, and an enlarged uterus on exam, I'm concerned about fibroids, which are benign tumors in the uterus, or possibly endometriosis or adenomyosis.
+
+Patient: Tumors? Are they cancer?
+
+Doctor: No, no. Fibroids are almost always benign, meaning non-cancerous. They're very common, especially in women in their 30s and 40s. They can cause heavy bleeding, pain, and pressure. But we need to do some testing to confirm what's going on.
+
+Patient: What kind of testing?
+
+Doctor: First, I'm ordering blood work today. I want a complete blood count to check your hemoglobin and iron levels, a comprehensive metabolic panel to check your overall health, iron studies including ferritin to see how depleted your iron stores are, and thyroid function tests to make sure your thyroid medication is at the right dose, because thyroid problems can also contribute to heavy bleeding.
+
+Patient: Okay, I can do blood work.
+
+Doctor: I also want to order a pelvic ultrasound, both abdominal and transvaginal. This will allow us to see your uterus, ovaries, and check for fibroids, cysts, or other abnormalities.
+
+Patient: Is the transvaginal one uncomfortable?
+
+Doctor: It can be a bit uncomfortable, but it's not painful. It gives us much better images of your uterus and ovaries than an abdominal ultrasound alone. Given your latex allergy, make sure you tell them so they can use non-latex covers for the probe.
+
+Patient: I will. What else?
+
+Doctor: Depending on what we find, you may need a consultation with a gynecologist. They might recommend additional procedures like a hysteroscopy, where they put a small camera inside your uterus to look for polyps or fibroids, or an endometrial biopsy to rule out any abnormalities in the uterine lining.
+
+Patient: That sounds scary.
+
+Doctor: I know it sounds like a lot, but we need to find the cause of your bleeding so we can treat it properly. In the meantime, I'm going to start treatment for your anemia. I'm prescribing you ferrous sulfate 325 milligrams, one tablet three times a day. Take it with vitamin C, like orange juice, to help absorption. But not with dairy or calcium supplements, as calcium blocks iron absorption.
+
+Patient: Will the iron pills make me feel better quickly?
+
+Doctor: It will take a few weeks to start feeling better, and several months to fully restore your iron levels. Some people get constipated or have an upset stomach from iron, so take it with food if that happens. If you can't tolerate oral iron, we can discuss IV iron infusions.
+
+Patient: Okay, I hope I can tolerate it.
+
+Doctor: For the heavy bleeding, I'm going to prescribe tranexamic acid 650 milligrams. Take one tablet three times a day during your period only. This medication helps reduce menstrual blood loss by helping your blood clot better. It can reduce bleeding by 40 to 50 percent.
+
+Patient: That would be amazing. This bleeding is ruining my life.
+
+Doctor: I understand. I'm also going to increase your ibuprofen regimen. Take 600 milligrams three times a day during your period. Ibuprofen not only helps with pain but also reduces menstrual bleeding by about 25 to 30 percent.
+
+Patient: I didn't know ibuprofen could help with the bleeding itself.
+
+Doctor: It does, by reducing prostaglandins that contribute to both cramping and bleeding. Now, depending on what we find, there are other treatment options we can discuss. If you have fibroids, options include medication to shrink them, procedures to remove them like myomectomy, or in severe cases, hysterectomy. But let's not get ahead of ourselves until we have the test results.
+
+Patient: I definitely don't want a hysterectomy. I might want another child someday.
+
+Doctor: And that's completely your choice. There are many fertility-preserving options. We'll cross that bridge if we come to it. For now, let's focus on getting you diagnosed and stabilizing your anemia.
+
+Patient: What should I do about my IUD? Could that be causing the bleeding?
+
+Doctor: The Mirena IUD usually makes periods lighter, not heavier, so I don't think it's the culprit. But the ultrasound will show us if it's properly positioned. If it's displaced, that could contribute to bleeding. When was it inserted?
+
+Patient: About three years ago.
+
+Doctor: It should still be good for another couple years, but we'll check its position on the ultrasound.
+
+Patient: Okay. Is there anything else I should do?
+
+Doctor: Eat iron-rich foods like red meat, dark leafy greens, beans, and fortified cereals. Avoid tea and coffee with meals, as they inhibit iron absorption. Make sure you're eating enough protein. And rest when you can - your body is working hard to compensate for the anemia.
+
+Patient: That's going to be hard with two kids and a full-time job.
+
+Doctor: I understand, but you need to prioritize your health. Can your husband help more with the kids and household tasks?
+
+Patient: I'll talk to him. He'll understand once I explain what's going on.
+
+Doctor: Good. If at any point you're soaking through a pad an hour for more than two hours, or if you pass clots larger than a golf ball, or if you feel extremely dizzy or faint, go to the emergency room. You might need a blood transfusion if the bleeding is too severe.
+
+Patient: I really hope it doesn't come to that.
+
+Doctor: Me too. But it's important you know the warning signs. I want to see you back in two weeks to review your lab results and ultrasound findings, and we'll go from there. The office will call you with your ultrasound appointment. Do you have any other questions?
+
+Patient: Will I need time off work for any of this?
+
+Doctor: The ultrasound is quick, maybe 30 minutes to an hour. The blood work is even faster. But depending on what we find, if you need procedures done, you may need a day or two off. Let's see what the tests show first.
+
+Patient: Alright. I'm just worried about missing work, but I know I need to take care of this.
+
+Doctor: Your health has to come first. You can't take care of your students and your family if you're not taking care of yourself. The staff will give you all your prescriptions and orders. Take care, Layla, and we'll talk soon.
+
+Patient: Thank you so much, doctor. I'm glad I finally came in.
+
+Doctor: Me too. We'll figure this out and get you feeling better. See you in two weeks.

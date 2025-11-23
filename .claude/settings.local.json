@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(npx prisma generate:*)",
+      "Bash(npm ls:*)",
+      "Bash(cd:*)",
+      "Bash(tree:*)",
+      "Bash(git -C \"c:\\AUB\\fall 26\\eece 503p\\Project\\Project\" status)",
+      "Bash(git remote set-url:*)",
+      "Bash(git -C \"c:\\AUB\\fall 26\\eece 503p\\Project\\Project\" pull origin main)",
+      "Bash(npm run dev:*)",
+      "Bash(npm start)",
+      "Bash(rsync:*)",
+      "Bash(robocopy:*)",
+      "Bash(powershell:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git remote:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(xcopy:*)",
+      "Bash(nul)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

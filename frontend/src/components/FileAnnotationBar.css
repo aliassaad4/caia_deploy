@@ -1,0 +1,352 @@
+/* FileAnnotationBar Component Styles */
+
+.annotation-bar {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.annotation-bar-compact {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f9fafb;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+}
+
+/* Bar Header */
+.annotation-bar .bar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.annotation-bar .bar-header h4 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.annotation-bar .annotation-badge {
+  background: #dbeafe;
+  color: #0369a1;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Mode Selector */
+.annotation-bar .mode-selector {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.annotation-bar .mode-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 12px;
+  background: #f9fafb;
+  border: 2px solid #e5e7eb;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 12px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.annotation-bar .mode-btn:hover {
+  border-color: #d1d5db;
+  background: white;
+  transform: translateY(-2px);
+}
+
+.annotation-bar .mode-btn .icon {
+  font-size: 24px;
+}
+
+.annotation-bar .mode-btn .label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Mode Specific Colors */
+.annotation-bar .mode-btn.highlight {
+  border-color: #fcd34d;
+  color: #b45309;
+}
+
+.annotation-bar .mode-btn.highlight:hover {
+  background: #fef9e7;
+  border-color: #f59e0b;
+}
+
+.annotation-bar .mode-btn.note {
+  border-color: #a78bfa;
+  color: #6d28d9;
+}
+
+.annotation-bar .mode-btn.note:hover {
+  background: #f3e8ff;
+  border-color: #9333ea;
+}
+
+.annotation-bar .mode-btn.flag {
+  border-color: #f87171;
+  color: #991b1b;
+}
+
+.annotation-bar .mode-btn.flag:hover {
+  background: #fee2e2;
+  border-color: #ef4444;
+}
+
+.annotation-bar .mode-btn.correction {
+  border-color: #86efac;
+  color: #166534;
+}
+
+.annotation-bar .mode-btn.correction:hover {
+  background: #f0fdf4;
+  border-color: #22c55e;
+}
+
+/* Active Mode Header */
+.annotation-bar .active-mode-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #f3f4f6;
+  border-radius: 6px;
+}
+
+.annotation-bar .mode-badge {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.annotation-bar .btn-cancel-mode {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px;
+  color: #6b7280;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+}
+
+.annotation-bar .btn-cancel-mode:hover {
+  background: #e5e7eb;
+  color: #1f2937;
+}
+
+/* Input Area */
+.annotation-bar .input-area {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.annotation-bar .annotation-textarea {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: inherit;
+  resize: vertical;
+  min-height: 80px;
+  transition: all 0.2s ease;
+}
+
+.annotation-bar .annotation-textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.annotation-bar .annotation-textarea:disabled {
+  background: #f3f4f6;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Character Count */
+.annotation-bar .char-count {
+  font-size: 11px;
+  color: #9ca3af;
+  text-align: right;
+}
+
+/* Error Message */
+.annotation-bar .error-message {
+  padding: 8px;
+  background: #fee2e2;
+  color: #991b1b;
+  border-radius: 4px;
+  font-size: 12px;
+  margin: -5px 0 0 0;
+}
+
+/* Submit Actions */
+.annotation-bar .submit-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.annotation-bar .btn-submit,
+.annotation-bar .btn-cancel {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.annotation-bar .btn-submit {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
+.annotation-bar .btn-submit:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.annotation-bar .btn-submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.annotation-bar .btn-cancel {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.annotation-bar .btn-cancel:hover:not(:disabled) {
+  background: #d1d5db;
+}
+
+.annotation-bar .btn-cancel:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Compact Mode */
+.annotation-bar-compact .btn-compact {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.annotation-bar-compact .btn-compact:hover {
+  background: white;
+}
+
+.annotation-bar-compact .btn-compact.active {
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.annotation-bar-compact .annotation-count {
+  font-size: 11px;
+  font-weight: 600;
+  color: #6b7280;
+  background: white;
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin-left: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .annotation-bar .mode-selector {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .annotation-bar .mode-btn {
+    padding: 10px;
+    font-size: 11px;
+  }
+
+  .annotation-bar .mode-btn .icon {
+    font-size: 20px;
+  }
+
+  .annotation-bar .submit-actions {
+    gap: 6px;
+  }
+
+  .annotation-bar .btn-submit,
+  .annotation-bar .btn-cancel {
+    padding: 6px 12px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .annotation-bar {
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .annotation-bar .mode-selector {
+    grid-template-columns: 1fr;
+  }
+
+  .annotation-bar .mode-btn {
+    flex-direction: row;
+    padding: 8px;
+    gap: 8px;
+    justify-content: center;
+  }
+
+  .annotation-bar .mode-btn .icon {
+    font-size: 18px;
+  }
+
+  .annotation-bar .submit-actions {
+    flex-direction: column;
+  }
+
+  .annotation-bar .btn-submit,
+  .annotation-bar .btn-cancel {
+    width: 100%;
+  }
+
+  .annotation-bar-compact {
+    padding: 6px 8px;
+    gap: 4px;
+  }
+
+  .annotation-bar-compact .btn-compact {
+    font-size: 16px;
+    padding: 2px 6px;
+  }
+}

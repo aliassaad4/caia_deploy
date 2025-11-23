@@ -1,0 +1,211 @@
+Doctor: Good morning! Please come in and have a seat. I'm Dr. Patricia Rodriguez. You must be Jihad Mobarak?
+
+Patient: Yes, good morning doctor. Thank you for seeing me.
+
+Doctor: Of course. I see this is your first visit to our clinic, so I'll need to gather some background information before we discuss what brings you in today. Can you confirm your full name and date of birth for me?
+
+Patient: Jihad Ahmad Mobarak. I was born on March 15th, 2003, so I just turned 22 last month.
+
+Doctor: Great. And do you know your blood type?
+
+Patient: Yes, I'm AB positive.
+
+Doctor: Perfect. Have you had any surgeries or been hospitalized before?
+
+Patient: No surgeries. I've never been hospitalized either, thankfully. I've been pretty healthy my whole life until recently.
+
+Doctor: That's good. Are you currently taking any medications?
+
+Patient: No prescription medications. Just ibuprofen sometimes when I have headaches or pain.
+
+Doctor: Any supplements or vitamins?
+
+Patient: I take a multivitamin sometimes, not every day though. And protein powder when I work out.
+
+Doctor: Do you have any allergies to medications or food?
+
+Patient: Yes, I'm allergic to penicillin. I had a reaction to it when I was a kid - broke out in hives all over. My mom said I also have a shellfish allergy. I've never tried shellfish because of that, so I don't know how severe it is.
+
+Doctor: Important to know. Any chronic medical conditions like asthma, diabetes, or high blood pressure?
+
+Patient: No, nothing like that. I've always been healthy.
+
+Doctor: Tell me about your family medical history. Any significant illnesses in your parents or siblings?
+
+Patient: My dad has high blood pressure and my mom has thyroid problems - hypothyroidism, I think. My grandfather on my dad's side died from colon cancer when he was 65. I have two younger sisters and they're both healthy.
+
+Doctor: Okay. Now let me ask about your lifestyle. Do you smoke?
+
+Patient: No, I've never smoked. I tried it once at a party in high school but hated it.
+
+Doctor: Good. How about alcohol?
+
+Patient: I drink occasionally at social events, maybe once or twice a month. Not much, just beer usually. I'm not a heavy drinker.
+
+Doctor: Do you exercise regularly?
+
+Patient: Yes, I go to the gym four or five times a week. I do weight training mostly, some cardio. I'm actually pretty into fitness - or at least I was before all this started.
+
+Doctor: What do you do for work or school?
+
+Patient: I'm a computer science student at the university. I'm in my senior year. I also work part-time at a tech company as an intern.
+
+Doctor: Busy schedule. Now, tell me what's been going on. What brings you in today?
+
+Patient: I've been having really bad stomach problems for about three months now. It's gotten to the point where it's affecting everything - my classes, my work, my workouts. I can't keep ignoring it anymore.
+
+Doctor: Tell me more about these stomach problems. What exactly are you experiencing?
+
+Patient: It started with just some stomach pain and discomfort after eating. At first, I thought maybe I was eating too much junk food or something. But it kept getting worse. Now I have this constant pain in my upper abdomen, right here in the middle and a bit to the left.
+
+Doctor: On a scale of 1 to 10, how bad is the pain?
+
+Patient: On average, maybe a 5 or 6. But sometimes after I eat, it spikes to an 8 or 9. It's this burning, gnawing feeling that just doesn't go away.
+
+Doctor: What makes it better or worse?
+
+Patient: Eating definitely makes it worse. Sometimes it hurts so bad after meals that I feel nauseous. It's also worse when I'm stressed, which is a lot lately with finals coming up. It feels a bit better when I take antacids, but the relief only lasts like an hour.
+
+Doctor: Are you experiencing any nausea or vomiting?
+
+Patient: Yes, nausea almost every day, especially in the mornings and after I eat. I've thrown up a few times when the pain gets really bad. The vomit sometimes has this dark color to it, which freaked me out.
+
+Doctor: Dark colored vomit - like coffee grounds?
+
+Patient: Yeah, exactly like that. I noticed it twice last week.
+
+Doctor: That's concerning. Any blood in your stool or black, tarry stools?
+
+Patient: My stools have been darker than usual, kind of black and sticky. I didn't think much of it at first, but now that you mention it, yes.
+
+Doctor: Any diarrhea or constipation?
+
+Patient: More diarrhea lately. Maybe 3 or 4 times a day. It's unpredictable, which makes it hard to go to class or work.
+
+Doctor: Have you lost any weight?
+
+Patient: Yes, actually. I weighed myself last week and I'm down about 12 pounds from three months ago. My clothes are all loose now. I've lost a lot of muscle too despite trying to keep up with the gym.
+
+Doctor: Any fever or feeling feverish?
+
+Patient: Sometimes I feel warm and sweaty, especially at night. I haven't taken my temperature though.
+
+Doctor: What about your appetite?
+
+Patient: It's terrible. I'm afraid to eat because I know it's going to hurt. I'm eating maybe one meal a day now, and even that's hard to finish.
+
+Doctor: Any heartburn or acid reflux?
+
+Patient: Yes, a lot of heartburn. It feels like acid coming up into my throat, especially when I lie down at night. I've been sleeping propped up on pillows.
+
+Doctor: What have you been eating and drinking? Any caffeine?
+
+Patient: I used to drink a lot of energy drinks for studying, like 2 or 3 a day. I've cut back now because they seem to make it worse. I've been trying to eat bland foods - rice, bread, bananas. But honestly, everything hurts.
+
+Doctor: Any stress in your life?
+
+Patient: Yeah, tons. I have finals in two weeks, I'm trying to finish my senior project, and I'm interviewing for full-time jobs after graduation. Plus this whole stomach thing is stressing me out even more.
+
+Doctor: I understand. Any recent travel or eating at new restaurants?
+
+Patient: Nothing unusual. I mostly eat at home or the campus cafeteria. Same places I've always gone.
+
+Doctor: Let me examine your abdomen now. Lie back for me. I'm going to press on different areas - let me know if anything hurts. Does this hurt? Here? How about here?
+
+Patient: Ow! Yes, that really hurts right there.
+
+Doctor: That's your epigastric region. I can feel some tenderness there. Your abdomen is slightly distended. Let me listen to your bowel sounds. They're hyperactive, which is consistent with what you're describing.
+
+Patient: What do you think it is, doctor?
+
+Doctor: Based on your symptoms - the epigastric pain, coffee-ground vomit, black tarry stools, and your family history of gastrointestinal cancer - I'm very concerned about a peptic ulcer. The black stools and coffee-ground emesis suggest bleeding in your stomach or upper intestine. This needs to be investigated immediately.
+
+Patient: An ulcer? Bleeding? That sounds serious.
+
+Doctor: It is serious, but very treatable. The symptoms you're describing - especially the coffee-ground vomit and black stools - indicate you may have a bleeding peptic ulcer. This could be caused by several things: H. pylori bacteria infection, excessive NSAID use like the ibuprofen you mentioned, stress, or rarely, something more serious.
+
+Patient: Oh no. What do we need to do?
+
+Doctor: First, I'm ordering comprehensive blood work today. I need a complete blood count to check if you're anemic from the bleeding, a comprehensive metabolic panel, liver function tests, and I'm also testing for H. pylori infection. Have you heard of H. pylori?
+
+Patient: No, what is it?
+
+Doctor: It's a bacteria that lives in the stomach and is a common cause of ulcers. We can test for it in your blood and also in your stool. If you have it, we need to treat it with antibiotics.
+
+Patient: Okay, I can do blood tests.
+
+Doctor: I'm also ordering a stool sample - you'll need to collect a sample at home and bring it to the lab. This will confirm if there's blood in your stool and test for H. pylori.
+
+Patient: That's fine.
+
+Doctor: Most importantly, I'm referring you to a gastroenterologist for an urgent endoscopy. This is a procedure where they put a small camera down your throat into your stomach to look directly at what's going on. They can see if you have an ulcer, how severe it is, and if it's bleeding. They can also take tissue samples and potentially treat it during the procedure.
+
+Patient: They're going to put a camera down my throat? Will I be awake?
+
+Doctor: No, you'll be sedated. You won't feel or remember anything. It's very safe and it's the gold standard for diagnosing what's going on in your stomach. Given your symptoms, especially the bleeding signs, this needs to be done within the next few days, not weeks.
+
+Patient: Okay, if you think it's necessary.
+
+Doctor: It's absolutely necessary. In the meantime, I'm starting you on medication right away. I'm prescribing a proton pump inhibitor called pantoprazole 40 milligrams - you'll take one tablet twice a day, once in the morning and once at night, 30 minutes before meals. This will dramatically reduce your stomach acid production and help the ulcer heal.
+
+Patient: Will that stop the pain?
+
+Doctor: It should help significantly within a few days. I'm also prescribing you sucralfate, which coats and protects your stomach lining. You'll take this four times a day - one tablet 30 minutes before meals and one at bedtime.
+
+Patient: Okay, I can do that.
+
+Doctor: If the H. pylori test comes back positive, we'll add antibiotics. The typical treatment is a combination of antibiotics for two weeks along with the acid reducer.
+
+Patient: What about the pain right now? It really hurts.
+
+Doctor: I'm giving you an antacid you can take as needed - calcium carbonate tablets. You can take these between the other medications for immediate relief. However, I want you to completely stop taking ibuprofen. NSAIDs like ibuprofen can cause and worsen ulcers. If you need pain relief, use acetaminophen instead - that's Tylenol.
+
+Patient: I didn't know ibuprofen could cause this.
+
+Doctor: Yes, especially if taken frequently or on an empty stomach. From now on, no more ibuprofen, no aspirin, no NSAIDs at all until we get this resolved.
+
+Patient: Got it. Anything else I need to do?
+
+Doctor: Yes, several things. No alcohol whatsoever - even occasional drinking. Alcohol irritates the stomach lining and slows healing. No caffeine - no coffee, no energy drinks, no tea. Cut out spicy foods, acidic foods like tomatoes and citrus, and fried or fatty foods. Stick to bland, easy-to-digest foods.
+
+Patient: That's basically everything I eat.
+
+Doctor: I know it's restrictive, but your stomach needs to heal. Think rice, oatmeal, bananas, applesauce, toast, boiled chicken, steamed vegetables. Small, frequent meals rather than three big meals. And try to manage your stress - I know you have finals, but stress makes ulcers worse.
+
+Patient: I'll try. Should I stop working out?
+
+Doctor: Light exercise is okay, but avoid intense workouts and heavy lifting until we know what's going on. Your body needs energy to heal, and you've already lost weight. Don't push yourself too hard right now.
+
+Patient: This is going to be tough.
+
+Doctor: I understand. But Jihad, I need you to understand how serious this is. You have signs of gastrointestinal bleeding. If you start vomiting large amounts of blood, have severe abdominal pain, feel dizzy or faint, or pass bright red blood in your stool, you need to go to the emergency room immediately. Don't wait, don't call the office - go straight to the ER.
+
+Patient: You're scaring me, doctor.
+
+Doctor: I don't mean to scare you, but I want you to be aware. Most likely this is a peptic ulcer that we can treat with medications. But we need to monitor you closely and rule out anything more serious. The endoscopy will give us answers.
+
+Patient: When will I get the results from the blood tests?
+
+Doctor: We'll have preliminary results in 24 to 48 hours. The H. pylori results might take a few days. I'll call you as soon as I have them. And my office will call you tomorrow to get you scheduled with the gastroenterologist this week.
+
+Patient: Okay. What about school? Should I tell my professors?
+
+Doctor: Yes, I'd recommend it. I can write you a note if you need to miss any classes or exams. Your health comes first. If you're feeling very unwell, don't push yourself to go to class.
+
+Patient: I have finals in two weeks. I can't miss those.
+
+Doctor: Let's take this one step at a time. Hopefully, with treatment, you'll feel better soon. But don't jeopardize your health for school. Your professors will understand, especially with medical documentation.
+
+Patient: I'll talk to them. Is there anything else I should know?
+
+Doctor: Keep a symptom diary. Write down what you eat, when you eat it, when you have pain, and any other symptoms. This will be helpful for the gastroenterologist. And if you have any questions or concerns before your follow-up, call our office. Don't hesitate.
+
+Patient: Okay, I will. Thank you, doctor.
+
+Doctor: You're welcome. I know this is a lot to take in. The nurse will help you with the lab orders, prescriptions, and the referral paperwork. Take care of yourself, Jihad. We'll get to the bottom of this and get you feeling better.
+
+Patient: I hope so. Thanks again.
+
+Doctor: See you soon. And remember - any emergency symptoms, go to the ER immediately.
+
+Patient: I will. Thank you.
